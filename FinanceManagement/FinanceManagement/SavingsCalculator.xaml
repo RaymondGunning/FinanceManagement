@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceManagement.SavingsCalculator">
+    <ScrollView>
+        <StackLayout x:Name="SLContentPage">
+            
+            <!-- Title -->
+            <Label x:Name="Title" Text="FinanceCalculator"
+                BackgroundColor="Gray"
+                TextColor="Black"
+                Font="32"
+                FontFamily="serif"
+                HorizontalTextAlignment="Center"/>
+            
+            <!-- Name Input -->
+            <Label Text="Full Name" HorizontalTextAlignment="Center"
+                FontSize="24" FontAttributes="Bold"/>
+            <Entry x:Name="Name" Placeholder="Enter Your Full Name" 
+                HorizontalTextAlignment="Center"/>
+            
+            <!-- Hours Worked Input -->
+            <Label Text="Hours Worked" HorizontalTextAlignment="Center" VerticalOptions="Center"
+                FontSize="24" FontAttributes="Bold"/>
+            <Entry x:Name ="HoursWorked" Placeholder="Enter Hours Worked" 
+                HorizontalTextAlignment="Center"/>
+            
+            <!-- Hourly Rate Input -->
+            <Label Text="Hourly Rate" HorizontalTextAlignment="Center" VerticalOptions="Center"
+                FontSize="24" FontAttributes="Bold"/>
+            <Entry x:Name="HourlyRate" Placeholder="Enter Your Hourly Rate" 
+                HorizontalTextAlignment="Center"/>
+            
+            <!-- Button to Calculate Savings -->
+            <Button x:Name="btnCalcuate" Text="Calculate" 
+                BackgroundColor="Black" BorderColor="Gray" 
+                TextColor="White" Clicked="BtnCalculate_Clicked"/>
+            
+            <!-- Account Savings -->
+            <Label x:Name="RateAns" Text=" " FontSize="22"
+                HorizontalTextAlignment="Center"
+                Margin="20"
+                FontAttributes="Bold"/>
+
+            <!-- Account Status -->
+            <Label x:Name="healthy" 
+                   FontSize="22" 
+                   TextColor="Green" 
+                   HorizontalTextAlignment="Center" 
+                   FontAttributes="Bold"/>
+            <Label x:Name="unhealthy"
+                   FontSize="22" TextColor="Red"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+
+            <!-- Grid For Progressbar -->
+            <Grid>
+
+                <Label x:Name="ProgressBar" FontSize="25"
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
+
+                <ProgressBar x:Name="MainProgressBar"
+                             Progress="0.0"
+                             WidthRequest="200"
+                             HeightRequest="15"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"/>
+
+                <Label x:Name="MainLabel"
+                       FontSize="55"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       TextColor="Navy"/>
+
+
+            </Grid>
+
+        </StackLayout>
+
+
+    </ScrollView>
+</ContentPage>

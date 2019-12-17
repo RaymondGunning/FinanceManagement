@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceManagement.HomePage">
+    <ContentPage.Content>
+       
+            <StackLayout>
+            <!-- About Title -->
+            <Label x:Name="Title" Text="Whats a Finance Calculator?"
+                BackgroundColor="Gray"
+                TextColor="Black"
+                Font="38"
+                FontFamily="serif"
+                HorizontalTextAlignment="Center"
+                Margin="34"/>
+                
+            <!-- About Info -->
+            <Label x:Name="About" TextColor="Black" Font="22" HorizontalTextAlignment="Center" BackgroundColor="LightGray"
+               Text=" A finance calculator allows you to input your weekly or monthly hours worked and also your hourly rate and it will calculate your income also a notification will let you know how healthy your savings are. "/>
+
+         
+
+
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
